@@ -14,7 +14,11 @@ int main(){
     for(unsigned int i = 0; i < vardas.size(); i++){
         if(static_cast<int>(vardas.at(i)) == 115){
             temp += "i";
-        } else {
+        } 
+        if(static_cast<int>(vardas.at(i)) == 97 && i == vardas.size() - 1){
+            temp.push_back(vardas.at(i));
+        }
+        else {
             temp.push_back(vardas.at(i));
         }
     }
